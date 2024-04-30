@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* .content {
+            padding-top: 80px;
+            text-align: center;
+            padding: 50px;
+        } */
+
+        /* First Section Styles */
+        .first-section .content{
+            background-image: url(/project/project4/image1.jpg);
+            background-size: cover;
+            color: white;
+            height: 100vh;
+            text-align: center;
+            display: grid;
+            place-content: center;
+        }
+
+        h2  {
+            font-size: 60px;
+        }
+        h2 span {
+            font-size: 30px;
+        }
+        h1{
+            font-size: 70px;
+        }
+
+
+        /* Second Section Styles */
+        .second-section {
+            background-color: #333;
+            padding: -100px 0;
+        }
+
+        .second-section p {
+            font-size: 50px;
+            color: #ddd;
+            text-align: center;
+        }
+
+        .second-section p span {
+            font-size: 70px;
+        }
+
+        /* Third Section Styles */
+        .third-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 0;
+        }
+
+
+        /* CSS */
+        /* Add hover effects for cards */
+        .card {
+            text-align: center;
+            width: 30%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            /* Keep transition property here */
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        /* Apply hover effect */
+        .card:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            /* Increase size slightly on hover */
+            box-shadow: 3px 5px 10px rgba(1, 1, 1, 0.3);
+            /* Adjust box-shadow on hover */
+        }
+
+        /* Navbar Styles */
+       
+            .navbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(51, 51, 51, 0.7); /* Fully transparent background */
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        .navbar .logo img {
+            height: 50px; /* Adjust the height as needed */
+        }
+
+        .navbar .search-box {
+            margin-left: auto;
+        }
+
+        .navbar input[type="text"] {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 200px;
+        }
+
+        .navbar input[type="submit"] {
+            padding: 8px 20px;
+            border: none;
+            background-color: #555;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .navbar input[type="submit"]:hover {
+            background-color: #333;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .contact-heading {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        .contact-form {
+            margin: 0 auto;
+            width: 100%;
+            text-align: left;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .contact-form textarea {
+            height: 150px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #23d64a;
+            color: white;
+            border: none;
+            align-items: center;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        
+        .last{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .last img{
+            width: 200px;
+        }
+
+
+        /* Media Queries */
+        @media screen and (max-width: 768px) {
+            .content {
+                padding: 30px;
+            }
+
+            .card {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a class="logo" href="#"><img src="/project/project4/images/logop.jpg" alt="Logo"></a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <form class="search-box" action="#">
+            <input type="text" name="search" placeholder="Search...">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+
+    <!-- First Section with Background Image -->
+    <section class="first-section">
+        <div class="content">
+        <h2>HI,<span>I am SONU</span></h2>
+        <h1>Wellcome to my website</h1>
+            
+        </div>
+    </section>
+
+    <!-- Second Section with Background Color -->
+    <section class="second-section">
+        <div class="content">
+            <p>We can do for <span>You</span>.</p>
+        </div>
+    </section>
+
+    <!-- Third Section with Cards -->
+    <section class="third-section">
+        <div class="card">
+            <img src="/project/project4/image2.jpg" alt="Image 2">
+            <h3>Web Develpor</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus cum aperiam laudantium aut,
+                asperiores autem.</p>
+        </div>
+        <div class="card">
+            <img src="/project/project4/image3.jpg" alt="Image 3">
+            <h3>Moblie Develpor</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas cum ipsa velit atque esse quas!</p>
+        </div>
+        <div class="card">
+            <img src="/project/project4/image4.jpg" alt="Image 4">
+            <h3>UX/UI Desgin</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, atque tenetur sequi necessitatibus
+                possimus sapiente.</p>
+        </div>
+    </section>
+    <section class="contact-section">
+        <h2 class="contact-heading">Contact Us</h2>
+        <div class="content">
+            <form class="contact-form" action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Your Company</p>
+    </footer>
+</body>
+
+</html>
